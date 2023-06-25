@@ -13,6 +13,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <main>
@@ -20,80 +21,79 @@
                 <div class="portfolio-container">
                     <div class="navigation-bar">
                         <nav class="navigation-settings">
-                            <a class="" href="index.html"> home</a>
-                            <a class="" href="about.html"> about</a>
-                            <a class="" href="resume.html"> resume</a>
-                            <a class="active" href="portfolio.html"> portfolio</a>
-                            <a class="" href="contact.html"> contact</a>  
+                            <a class="" href="index.html" data-aos="fade-down" data-aos-duration="300"> home</a>
+                            <a class="" href="about.html" data-aos="fade-down" data-aos-delay="100" data-aos-duration="300"> about</a>
+                            <a class="" href="resume.html" data-aos="fade-down" data-aos-delay="200" data-aos-duration="300"> resume</a>
+                            <a class="active" href="portfolio.html" data-aos="fade-down" data-aos-delay="300" data-aos-duration="300"> portfolio</a>
+                            <a class="" href="contact.html" data-aos="fade-down" data-aos-delay="400" data-aos-duration="300"> contact</a>  
                         </nav>
                     </div>
                 </div>
                 <div class="portfolio-projects-container">
                     <div class="projects-container">
-                        <div class="project-title">
+                        <div class="project-title" data-aos="fade-down" data-aos-delay="300" data-aos-duration="300">
                             My Projects
                         </div>
                         <div class="project-picture">
-                            <img src="images/404.jpg">
+                            <img src="images/404.jpg" data-aos="fade-right" data-aos-delay="400" data-aos-duration="300">
                             
                         </div>
                         <div class="project-informations">
-                            <div class="project-name">
+                            <div class="project-name" data-aos="fade-left" data-aos-delay="500" data-aos-duration="300">
                                 <p>
                                     First Project Name
                                 </p> 
                             </div>
-                            <div class="project-description">
+                            <div class="project-description" data-aos="fade-left" data-aos-delay="600" data-aos-duration="300">
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                                 </p>
                             </div>
                             <div class="project-source">
-                                <button>
+                                <button data-aos="fade-up" data-aos-delay="700" data-aos-duration="300">
                                     <img src="icons/github.png">
                                 </button>
                             </div>
                         </div>
 
                         <div class="project-picture">
-                            <img src="images/404.jpg">
-                            
+                            <img src="images/404.jpg" data-aos="fade-right" data-aos-delay="100" data-aos-duration="300">
                         </div>
                         <div class="project-informations">
-                            <div class="project-name">
+                            <div class="project-name" data-aos="fade-down" data-aos-delay="100" data-aos-duration="300">
                                 <p>
                                     Second Project Name
                                 </p> 
                             </div>
-                            <div class="project-description">
+                            <div class="project-description" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                                 </p>
                             </div>
-                            <div class="project-source">
-                                <button>
+                            <div class="project-source" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+                                <button data-aos="fade-up" data-aos-delay="100" data-aos-duration="300">
                                     <img src="icons/github.png">
                                 </button>
                             </div>
                         </div>
 
                         <div class="project-picture">
-                            <img src="images/404.jpg">
+                            <img src="images/404.jpg" data-aos="fade-right" data-aos-delay="100" data-aos-duration="300">
                             
                         </div>
                         <div class="project-informations">
-                            <div class="project-name">
+                            <div class="project-name" data-aos="fade-down" data-aos-delay="100" data-aos-duration="300">
                                 <p>
                                     Third Project Name
                                 </p> 
                             </div>
-                            <div class="project-description">
+                            <div class="project-description" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                                 </p>
                             </div>
                             <div class="project-source">
-                                <button>
+                                <button data-aos="fade-up" data-aos-delay="100" data-aos-duration="300">
                                     <img src="icons/github.png">
                                 </button>
                             </div>
@@ -104,5 +104,9 @@
                 </div>
             </section>
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
