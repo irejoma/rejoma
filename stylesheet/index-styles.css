@@ -26,66 +26,6 @@ body {
     padding: 0;
     overflow: hidden;
 }
-/*-----DARK MODE SWITCH-----*/
-
-.dark-mode-switch {
-    position: relative;
-}
-
-/* The switch - the box around the slider */
-.switch {
-    font-size: 17px;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    display: inline-block;
-    width: 51px;
-    height: 25px;
-   }
-   
-   /* Hide default HTML checkbox */
-   .switch input {
-    opacity: 1;
-    width: 0;
-    height: 0;
-   }
-   
-   /* The slider */
-   .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    background: #fff;
-    transition: .4s;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-   }
-   
-   .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.3em;
-    width: 1.3em;
-    border-radius: 16px;
-    left: 1.2px;
-    top: 0;
-    bottom: 0;
-    background-color: white;
-    box-shadow: 0 2px 5px #999999;
-    transition: .4s;
-   }
-   
-   input:checked + .slider {
-    background-color: #5fdd54;
-    border: 1px solid transparent;
-   }
-   
-   input:checked + .slider:before {
-    transform: translateX(1.5em);
-   }
 
 
 .home-page {
@@ -113,6 +53,8 @@ body {
     font-family: poppins, sans-serif;
 }
 
+
+
 .homepage-name h2 {
     color: rgb(32, 51, 27);
     font-size: 2rem;
@@ -124,7 +66,6 @@ body {
     color: rgb(0, 204, 102);
     font-weight: 700;
 }
-
 
 .homepage-name-navigation {
     display: flex;
@@ -153,7 +94,6 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%;
-
 }
 
 
@@ -240,6 +180,65 @@ body {
     background-color: none;
 }
 
+
+/* Responsiveness */
+/* Styles for mobile devices */
+  
+/* Styles for desktops and laptops */
+@media (max-width: 1200px) {
+    .homepage-left {
+    display: flex;
+    }
+
+
+
+    .homepage-name {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        color: rgb(32, 51, 27);
+        font-size: 2rem;
+        font-family: poppins, sans-serif;
+    }
+
+
+
+    .homepage-name h2 {
+        color: rgb(32, 51, 27);
+        font-size: 1.5rem;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    .homepage-name h2 span {
+        color: rgb(0, 204, 102);
+        font-weight: 500;
+    }
+
+
+    .homepage-right {
+        display: flex;
+        align-items: flex-start;
+        padding: 100px 30px 0 0;
+        margin: 0;
+    }
+
+    .homepage-picture {
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+        border-width: 0;
+        border-style: solid;
+    }
+
+    .homepage-picture img {
+        object-fit: cover;
+        height: 50px;
+        width: 50px;
+    }
+
+}
+  
 
 
 
