@@ -185,60 +185,79 @@ body {
 /* Styles for mobile devices */
   
 /* Styles for desktops and laptops */
+
 @media (max-width: 1200px) {
+
+    .home-page {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
     .homepage-left {
-    display: flex;
-    }
-
-
-
-    .homepage-name {
-        display: block;
-        justify-content: left;
+        padding-left: 0;
+        padding-top: 0;
+        justify-content: center;
         align-items: center;
-        color: rgb(32, 51, 27);
-        font-size: 2rem;
-        font-family: poppins, sans-serif;
     }
-
-
-
+    
+    .homepage-name {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 2.3rem;
+    }
+    
     .homepage-name h2 {
         color: rgb(32, 51, 27);
-        font-size: 1.5rem;
-        line-height: 20px;
+        font-size: 2rem;
+        line-height: 50px;
         font-weight: 300;
     }
-
+    
     .homepage-name h2 span {
         color: rgb(0, 204, 102);
         font-weight: 500;
     }
+    
+    .homepage-name-navigation {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-
+    /*-----NAVIGATION SETTINGS-----*/
+    .navigation-settings {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 55px;
+    }
+    
     .homepage-right {
-        display: flex;
-        align-items: flex-start;
-        padding: 100px 30px 0 0;
+        padding: 0 0 0 0;
         margin: 0;
+        justify-content: center;
     }
-
-    .homepage-picture {
-        display: flex;
-        align-items: flex-start;
-        height: 100%;
-        border-width: 0;
-        border-style: solid;
-    }
-
+    
+    
     .homepage-picture img {
+        justify-content: center;
+        align-items: center;
         object-fit: cover;
-        height: 50px;
-        width: 50px;
+        height: 71vh;
+        width: 100%;
     }
+    
 
+    .homepage-socials {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    
 }
-  
+    
 
 
 
