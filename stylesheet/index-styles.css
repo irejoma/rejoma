@@ -185,8 +185,12 @@ body {
 /* Styles for mobile devices */
   
 /* Styles for desktops and laptops */
-
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+    .homepage-picture img {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
 
     .home-page {
         display: grid;
@@ -240,9 +244,6 @@ body {
     
     
     .homepage-picture img {
-        justify-content: center;
-        align-items: center;
-        object-fit: cover;
         height: 71vh;
         width: 100%;
     }
