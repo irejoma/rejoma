@@ -116,6 +116,11 @@ body {
     font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
 }
 
+.resume-container .resume-download button:hover {
+    cursor: pointer;
+    background-color: #0c4900;
+}
+
 
 .resume-container .school-container {
     padding-bottom: 30px;
