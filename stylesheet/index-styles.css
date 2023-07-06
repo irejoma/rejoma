@@ -196,7 +196,7 @@ body {
     .home-page {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 170px 5px 0 20px;
+        padding: 170px 20px 0 20px;
     }
 
     .homepage-left {
