@@ -183,72 +183,7 @@ body {
 
 /* Responsiveness */
 
-@media (max-width: 375px) {
 
-    #particles-js {
-        position: fixed;
-        width: auto;
-        height: 100vh;
-        background-color: rgba(255, 255, 255, 255);
-        z-index: -1;
-    }
-
-    .home-page {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 170px 20px 0 20px;
-    }
-
-    .homepage-left {
-        padding-left: 0;
-        padding-top: 0;
-    }
-
-    .homepage-name {
-        font-size: 16px;
-
-    }
-
-    .homepage-name h1 {
-        font-weight: 700;
-        font-style: italic;
-    }
-
-    .homepage-name h2 {
-        font-size: 2.3rem;
-        line-height: 45px;
-        font-weight: 700;
-    }
-
-    .homepage-name h2 span {
-        font-weight: 700;
-    }
-
-    .homepage-name-navigation {
-        padding-top: 1dvh;
-        padding-bottom: 10px;
-    }
-
-    .homepage-picture img {
-        display: none;
-    }
-
-    .navigation-settings {
-        gap: 15px;
-        font-size: 12px;
-        font-weight: 700;
-    }
-
-    .homepage-socials button {
-        padding: 8px;
-        margin: 1px;
-    }
-
-    .homepage-socials .social .white-icon {
-        height: 10px;
-        width: 10px;
-    }
-}
 
 
 
