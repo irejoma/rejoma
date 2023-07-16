@@ -43,8 +43,7 @@ body {
 
 .homepage-name {
     display: block;
-    justify-content: left;
-    align-items: center;
+    text-align: left;
     color: rgb(32, 51, 27);
     font-size: 2rem;
     font-family: poppins, sans-serif;
@@ -65,9 +64,6 @@ body {
 }
 
 .homepage-name-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-top: 2vh;
     padding-bottom: 0.5vh;
 }
@@ -97,7 +93,6 @@ body {
     color: rgb(32, 51, 27);
     display: flex;
     flex-direction: row;
-    
     gap: 20px;
     font-size: 1.3rem;
     font-weight: 500;
@@ -144,7 +139,9 @@ body {
 
 /*-----SOCIALS-----*/
 .homepage-socials {
-    display: inline-block;
+    display: flex;
+    justify-content: left;
+    padding-top: 1vh;
 }
 
 .homepage-socials button {
@@ -167,8 +164,8 @@ body {
 
 
 .homepage-socials .social .white-icon {
-    height: 16px;
-    width: 16px;
+    max-height: 16px;
+    max-width: 16px;
     filter: invert(100%) brightness(200%);
     background-color: none;
 }
@@ -176,10 +173,57 @@ body {
 
 /* Responsiveness */
 
-@media screen and (max-width: 1414px)
+@media screen and (max-width: 1440px)
 {
+    .homepage-left {
+        padding-left: 5vw;
+    }
+
+    .homepage-name {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
     .homepage-name h2{
         line-height: 35px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .homepage-name-navigation {
+        display: flex;
+        justify-content: center;
+        padding-top: 1vh;
+        padding-bottom: 0;
+    }
+
+    .navigation-settings {
+        font-size: 1.1rem;
+    }
+
+    .homepage-socials {
+        display: flex;
+        justify-content: center;
+    }
+
+    .homepage-socials button {
+        padding: 0.5rem;
+    }
+
+    .homepage-socials .social .white-icon {
+        max-height: 10px;
+        max-width: 10px;
+    }
+
+    .homepage-right {
+        position: relative;
+    }
+    .homepage-picture {
+        position: absolute;
+        bottom: 0;
+    }
+    .homepage-picture img {
+        height: 85vh;
     }
 }
 
