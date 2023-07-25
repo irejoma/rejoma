@@ -227,6 +227,82 @@ body {
     }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .home-page {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-left {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .homepage-picture img {
+        display: none;
+    }
+    
+    .homepage-right {
+        display: none;
+    }
+}
+/*tablets and smaller laptops*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .home-page {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-left {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .homepage-picture img {
+        display: none;
+    }
+    
+    .homepage-right {
+        display: none;
+    }
+}
+/*mobile phones*/
+@media screen and (max-width: 767px){
+    .home-page {
+        grid-template-columns: 1fr;
+    }
+    
+    .homepage-name {
+        font-size: 1rem;
+    }
+
+    .homepage-name h2 {
+        font-size: 1.3rem;
+    }
+
+    .navigation-settings {
+        font-size: 0.9rem;
+    }
+
+    .homepage-left {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .homepage-picture img {
+        display: none;
+    }
+    
+    .homepage-right {
+        display: none;
+    }
+
+    .hamburger-container .hamburger{
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
 
 
