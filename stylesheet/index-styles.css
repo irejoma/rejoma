@@ -308,6 +308,59 @@ body {
         width: 40px;
         height: 40px;
     }
+
+}
+
+@media screen and (max-width: 480px) {
+    .home-page {
+        display: flex;
+        justify-content: left;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .homepage-left {
+        display: flex;
+        
+    }
+
+    .homepage-left-inside {
+        top: 2em;
+    }
+
+    .homepage-name {
+        font-size: 1.5rem;
+        line-height: 4rem;
+        text-align: left;
+    }
+
+    .homepage-name h1 {
+        margin-bottom: 0.1rem;
+    }
+
+    .homepage-name h2 {
+        font-size: 2.3rem;
+        text-align: left;
+        line-height: 1.3em;
+        font-weight: 300;
+    }
+
+    
+    .homepage-socials {
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 2rem;
+    }
+
+    .navigation-settings {
+        justify-content: center;
+    }
+
+    .homepage-socials button{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
 }
 
 
