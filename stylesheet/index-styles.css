@@ -134,6 +134,68 @@ body {
 
 }
 
+.homepage-mobile-navigation {
+    
+}
+
+#hamburgerButton {
+    font-size: 24px;
+    display: none;
+}
+
+#hamburgerButton img {
+    max-height: 1rem;
+}
+
+#navMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(0.3rem);
+    height: 22rem;
+    width: 25rem;
+    z-index: 1;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+
+#navVisual-links {
+    height: 20rem;
+    width: 25rem;
+    border-radius: 15px;
+    padding: 0rem 0 0 2rem;
+    display: grid;
+}
+
+#navVisual-links a {
+    font-size: 1rem;
+    font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+  
+#closeButton {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    border: none;
+}
+
+#closeButton img {
+    max-height: 1.2rem;
+    max-width: 1.2rem;
+    background-color: none;
+}
+
+
+
+
 
 
 
@@ -227,7 +289,7 @@ body {
         bottom: 0;
     }
     .homepage-picture img {
-        height: 85vh;
+        max-height: 85vh;
     }
 }
 
@@ -242,13 +304,29 @@ body {
         align-items: center;
         padding-left: 0;
     }
-    .homepage-picture img {
-        display: none;
-    }
     
     .homepage-right {
-        display: none;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
     }
+
+    .homepage-picture {
+        max-height: 71vh;
+    }
+
+    .homepage-socials {
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 1.5rem;
+    }
+
+    .homepage-socials button {
+        border: 0.1px solid white;
+    }
+    
+
 }
 /*tablets and smaller laptops*/
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -262,12 +340,26 @@ body {
         align-items: center;
         padding-left: 0;
     }
-    .homepage-picture img {
-        display: none;
-    }
     
     .homepage-right {
-        display: none;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    .homepage-picture {
+        max-height: 71vh;
+    }
+
+    .homepage-socials {
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 1.5rem;
+    }
+
+    .homepage-socials button {
+        border: 0.1px solid white;
     }
 }
 /*mobile phones*/
@@ -278,15 +370,15 @@ body {
     }
     
     .homepage-name {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .homepage-name h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .navigation-settings {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .homepage-left {
@@ -309,18 +401,29 @@ body {
         height: 40px;
     }
 
+    .homepage-socials {
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 1.5rem;
+    }
+
+    .homepage-socials button{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     .home-page {
         display: flex;
         justify-content: left;
-        padding: 0 2rem 0 2rem;
+        padding: 0 1rem 0 1rem;
     }
 
     .homepage-left {
-        display: flex;
-        
+        display: flex;    
     }
 
     .homepage-left-inside {
@@ -349,11 +452,7 @@ body {
         position: absolute;
         left: 1em;
         right: 1em;
-        bottom: 2rem;
-    }
-
-    .navigation-settings {
-        justify-content: center;
+        bottom: 1.5rem;
     }
 
     .homepage-socials button{
@@ -361,6 +460,40 @@ body {
         height: 2.3rem;
     }
 
+    .homepage-name-navigation {
+        display: none;
+    }
+
+    .homepage-right {
+        display: block;
+    }
+
+    .homepage-left {
+        position: relative;
+    }
+
+    .mobile-navigation-settings {
+        position: absolute;
+        right: 0;
+        top: 1rem;
+    }
+    #hamburgerButton {
+        display: block;
+        z-index: 3;
+        background-color: white;
+        border: none;
+    }
+
+    #hamburgerButton img {
+        max-height: 1.2rem;
+    }
+
+    #navMenu {
+        display: none;
+    }
+
+   
+    
 }
 
 

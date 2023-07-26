@@ -15,7 +15,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <script src="script-files/script.js"></script>
+        <script src="script-files/myscript.js"></script>
     </head>
 
     <body>
@@ -24,6 +24,26 @@
                 <div id="particles-js"></div>
                 <div class="home-page">
                     <div class="homepage-left">
+                        <div class="homepage-mobile-navigation">
+                            <nav class="mobile-navigation-settings">
+                                <button id="hamburgerButton" onclick="toggleNavMenu()">
+                                    <img src="icons/menu.png" alt="Menu">
+                                </button>
+                                <nav id="navMenu">
+                                    <button id="closeButton" onclick="toggleNavMenu()">
+                                            <img src="icons/close.png" alt="Closed Menu">
+                                    </button>
+                                    <div id="navVisual-links">
+                                        <a class="active"  href="index.html">> Home</a>
+                                        <a class="" href="about.html">> About</a>
+                                        <a class="" href="resume.html">> Resume</a>
+                                        <a class="" href="portfolio.html">> Portfolio</a>
+                                        <a class="" href="contact.html">> Contact</a>  
+                                    </div>
+                                </nav>
+                                
+                            </nav>
+                        </div>
                         <div class="homepage-left-inside">
                             <div class="homepage-name">
                                 <h1 class="animate__animated animate__fadeInDown  animate__faster" style="animation-delay: 0.1s; animation-duration: 0.5s;">Hi, I am Renz!</h1>
@@ -38,7 +58,6 @@
                                     <a class=" animate__animated animate__fadeInDown  animate__faster" style="animation-delay: 0.9s; animation-duration: 0.3s;" href="contact.html">> Contact</a>  
                                 </nav>
                             </div>
-
 
                             <div class="homepage-socials">
                                 <button class="animate__animated animate__fadeInLeft animate__faster"   style="animation-delay: 1s; animation-duration: 1s;">
