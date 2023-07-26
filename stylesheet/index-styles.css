@@ -134,13 +134,19 @@ body {
 
 }
 
-.homepage-mobile-navigation {
-    
+
+
+.mobile-navigation-settings {
+    position: relative;
 }
 
 #hamburgerButton {
+    position: absolute;
     font-size: 24px;
     display: none;
+    right: 1rem;
+    top: 1rem;
+    z-index: -1;
 }
 
 #hamburgerButton img {
@@ -155,10 +161,11 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(0.3rem);
     height: 22rem;
-    width: 25rem;
-    z-index: 1;
+    width: 13rem;
+    z-index: 2;
     border-radius: 15px;
     border: 1px solid black;
+    padding: 1rem 1rem 0 0;
 }
 
 
@@ -182,8 +189,8 @@ body {
     float: right;
     font-size: 24px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.7);
-    
+    background-color: rgba(247, 247, 247, 0.7);
+    backdrop-filter: blur(0.3rem);
     border: none;
 }
 
@@ -291,6 +298,9 @@ body {
     .homepage-picture img {
         max-height: 85vh;
     }
+
+    
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -325,6 +335,7 @@ body {
     .homepage-socials button {
         border: 0.1px solid white;
     }
+    
     
 
 }
@@ -361,6 +372,9 @@ body {
     .homepage-socials button {
         border: 0.1px solid white;
     }
+
+    
+
 }
 /*mobile phones*/
 @media screen and (max-width: 767px){
@@ -413,12 +427,13 @@ body {
         height: 2.3rem;
     }
 
+    
 }
 
 @media screen and (max-width: 480px) {
     .home-page {
         display: flex;
-        justify-content: left;
+        justify-content: center;
         padding: 0 1rem 0 1rem;
     }
 
@@ -431,9 +446,9 @@ body {
     }
 
     .homepage-name {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         line-height: 4rem;
-        text-align: left;
+        text-align: center;
     }
 
     .homepage-name h1 {
@@ -441,8 +456,8 @@ body {
     }
 
     .homepage-name h2 {
-        font-size: 2.3rem;
-        text-align: left;
+        font-size: 2rem;
+        text-align: center;
         line-height: 1.3em;
         font-weight: 300;
     }
@@ -477,6 +492,7 @@ body {
         right: 0;
         top: 1rem;
     }
+
     #hamburgerButton {
         display: block;
         z-index: 3;
@@ -490,10 +506,9 @@ body {
 
     #navMenu {
         display: none;
+        z-index: 3;
     }
 
-   
-    
 }
 
 
