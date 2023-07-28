@@ -15,18 +15,16 @@ body {
     position: fixed;
     color: rgb(32, 51, 27);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 2rem;
     font-size: 1rem;
     font-weight: 500;
     font-family: poppins, sans-serif;
-    height: 70px;
+    height: 4.5rem;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(0.4rem);
-    left: 0;
-    right: 0;
     box-shadow: 0.8px 0.8px 3px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
@@ -78,98 +76,89 @@ body {
 /*=====ABOUT PAGE=====*/
 
 .about-page{
-    position: relative;
     display: grid;
-    top: 30px;
-    height: 91vh;
+    height: 100vh;
+    width: 100%;
     grid-template-columns: 1fr;
     background-color: white;
     font-family: poppins, sans-serif;
+    position: relative;
 }
+
 
 
 .about-page .about-picture img {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    max-height: 300px;
+    max-width: 300px;
     border-radius: 50%;
-    left: 390px;
-    top: 100px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    top: 6rem;
 }
 
 .about-information {
     position: absolute;
     display: block;
-    right: 200px;
-    top: 100px;
-    width: 900px;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1500px;
+    max-height: 410px;
     text-align: justify;
-    padding-left: 30px;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    border-radius: 15px;
 }
 
 .about-information .about-me {
-    font-size: 16px;
-    color: rgb(32, 51, 27);
+    font-size: 1rem;
+    color: rgb(36, 36, 36);
+    font-weight: 500;
 }
 
 .about-information .personal-details {
     font-weight: 700;
-    font-size: 36px;
-    color: rgb(32, 51, 27);
-    line-height: 60px;
+    font-size: 2.1rem;
+    color: green;
+    line-height: 4rem;
+    text-align: center;
 }
 
 .about-information .paragraph-one {
-    font-size: 16px;
-    line-height: 25px;
-    padding-top: 20px;
-    color: rgb(32, 51, 27);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1.2rem;
+    color: rgb(36, 36, 36);
+    text-align: center;
 }
 
 .about-information .paragraph-two {
-    font-size: 16px;
-    line-height: 25px;
-    padding-top: 30px;
-    color: rgb(32, 51, 27);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1.2rem;
+    color: rgb(36, 36, 36);
+    text-align: center;
 }
 
-.about-goal {
-    position: absolute;
-    left: 250px;
-    bottom: 200px;
-    width: 800px;
-    font-family: poppins, sans-serif;
-    padding-right: 30px;
-    color: #0f5c00;
-}
 
-.about-goal .about-my-goal {
-    display: flex;
-    justify-content: right;
+.about-my-goal {
     font-weight: 700;
-    font-size: 36px;
-    color: #46310b;
-    line-height: 60px;
-
+    font-size: 2rem;
+    color: green;
+    line-height: 1.5rem;
+    padding-top: 6rem;
+    text-align: center;
 }
 
-.about-goal .about-my-goal-paragraph {
-    font-size: 16px;
+.about-my-goal-paragraph {
+    font-size: 1rem;
     display: flex;
     justify-content: right;
     text-align: justify;
-    padding-top: 20px;
-    color: #46310b;
-}
-
-.about-picture-two img {
-    position: absolute;
-    object-fit: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    right: 430px;
-    bottom: 120px;
+    padding-top: 1rem;
+    color: rgb(36, 36, 36);
+    text-align: center;
 }
 
 /*=====INTERESTS=====*/
@@ -179,7 +168,7 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-top: 85px;
+    margin-top: 3rem;
     font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
 }
 
@@ -351,4 +340,26 @@ body {
     font-weight: 500;
     margin: 15px 15px 15px 0;
     border: 1.5px solid rgba(0, 51, 26, 0.15);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
