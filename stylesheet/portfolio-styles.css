@@ -173,3 +173,50 @@ body {
     width: 30px;
     object-fit: cover;
 }
+
+
+
+.video-project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+}
+
+.video-container-title {
+    padding: 2rem 0 0 7.5rem;
+    font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.video-project-container .video-1 {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.video-project-container .video-1 p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
+    padding: 1em 0 1em 0;
+}
+
+.video-project-container .video-1 video {
+    height: 675px;
+    width: 1200px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.video-project-container .video-2 {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.video-project-container .video-2 video {
+    height: 675px;
+    width: 1200px;
+    border: 1px solid black;
+}
