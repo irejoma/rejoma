@@ -193,6 +193,7 @@ body {
     justify-content: center;
     align-items: center;
     display: grid;
+    padding-bottom: 5rem;
 }
 
 .video-project-container .video-1 p {
@@ -213,10 +214,18 @@ body {
     justify-content: center;
     align-items: center;
     display: grid;
+    padding-bottom: 5rem;
 }
 
 .video-project-container .video-2 video {
     height: 675px;
     width: 1200px;
     border: 1px solid black;
+}
+
+.video-project-container .video-2 p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
+    padding: 1em 0 1em 0;
 }
