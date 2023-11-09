@@ -1,0 +1,387 @@
+/* body {
+    padding: 1rem 0 0 0 ;
+    margin: 0;
+} */
+
+p, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.container-fluid {
+    height: 100vh; 
+    width: auto; 
+    position: relative;
+    /* border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px; */
+    /* background-color: red; */
+}
+
+/* .container-fluid .row {
+    font-family: poppins, sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.container-fluid .list:hover {
+    background-color: #4273FA;
+    text-decoration: none;
+} 
+
+.container-fluid .row h4, h3 {
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.container-fluid .row a {
+    color: white;
+    
+} */
+
+
+/* Sidebar */
+
+/* #sidebar_container {
+    height: 93vh; 
+    font-size: 1rem;
+}
+
+#sidebar {
+    background-color: #485779;
+}
+
+#sidebar_header {
+    text-align: center; 
+    border-bottom: 1px solid white;
+}
+
+#sidebar_header #header_title img {
+    height: 70px;
+    width: 70px;
+    z-index: -1;
+    display: inline-block;
+}
+
+#sidebar_header #header_title h3 {
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+/* Login Container */
+
+#login_container{
+    border-bottom: 1px solid white; 
+    display: grid; 
+    text-align: center;
+    background-color: #485779;
+}
+
+#login_container p {
+    color: white;
+}
+
+#login_container a {
+    color: black; 
+    font-weight: 500; 
+    background-color: whitesmoke; 
+    margin-left: 1rem; 
+    margin-right:1rem;
+}
+
+#login_container a:hover {
+    background-color: #dc3545;
+    color: whitesmoke;
+}
+
+#login_container #select_branch_button {
+    background-color: #007bff;
+    color: whitesmoke;
+}
+
+#login_container #select_branch_button:hover {
+    background-color: #28a745;
+    color: whitesmoke;
+}
+
+
+#login_container #logged_out a{
+    color: black; 
+    font-weight: 500; 
+    background-color: whitesmoke; 
+    margin-left: 1rem; 
+    margin-right:1rem;
+}
+
+/* LOGIN PAGE DESIGN */
+
+#login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #485779;
+}
+
+#login_page_container {
+    background-color: rgb(145, 10, 5);
+    padding: 4rem 0 4rem 0;
+    border-radius: 10px;
+    box-shadow: 11px 15px 15px rgba(1, 1, 1, 0.6);
+    background-image: url('../icon/meat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#login_title {
+    display: flex;
+    justify-content: center;
+}
+
+#login_title h1 {
+    font-weight: 700;
+}
+
+#login_title img {
+    height: 23%;
+    width: 23%;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+}
+
+#login_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #username_password {
+    font-size: 1.1rem;
+    color: rgb(26, 26, 26);
+    font-weight: 500;
+    /* -webkit-text-stroke: 0.5px rgb(145, 10, 5); */
+
+#input_field {
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+#input_field:focus {
+    outline-color: rgb(145, 10, 5);
+}
+
+#login_form_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+#login_form_button .col{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#login_form_button #login_button {
+    color: whitesmoke;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 0.3rem 2rem 0.3rem 2rem;
+    border: 1px solid white;
+    background-color: rgb(202, 29, 23);
+}
+
+#login_form_button #login_button:hover {
+    background-color: rgb(248, 207, 206);
+    border: 1px solid whitesmoke;
+    color: rgb(243, 28, 28);
+}
+
+
+Main Content or Column
+#main_content {
+    background-color: whitesmoke;
+}
+
+
+#page_title {
+    font-size: 1rem;
+    font-family: poppins, Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 700;
+}
+
+/* #page_title #page_header_title {
+    color: lightblue;
+    padding-bottom: 1rem;
+} */
+
+
+/* Buttons */
+
+#back_button {
+    display: block;
+    background-color: #485779;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#add_button {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#finalizeButton {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#post_button {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+
+
+#add_stock {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* For Forms */
+
+#form_button button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#form_button a {
+    display: block;
+}
+
+#form_title label {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+#type {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+#brand {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+#access_tag {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+
+
+/* Information Display */
+#information_display {
+    color: black;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#information_display p {
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Quantity Display on Stocks */
+
+#quantity_display p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+/* footer logout */
+
+#footer_logout {
+    color: black;
+    display: grid;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+#footer_logout p {
+    color: black;
+    padding-right: 1rem;
+}
+
+#footer_logout a {
+    color: whitesmoke; 
+    font-weight: 500; 
+    background-color: maroon;
+}
+
+
+#footer_logout #logged_out a{
+    color: whitesmoke; 
+    font-weight: 500; 
+    background-color: #485779;
+}
+
+
+/* Table Design */
+
+#table_container {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10rem;
+}
+
+#table_container #main_table {
+    height: 50vh; 
+    overflow-y: auto;
+}
+
+/* QR Scanner Design! */
+
+.qr_container {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#qr_display {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
